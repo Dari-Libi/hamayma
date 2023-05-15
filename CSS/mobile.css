@@ -1,0 +1,103 @@
+@media (max-width: 1040px) {
+    #contact {
+       flex-direction: column;
+    }
+
+}
+
+@media (max-width: 930px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 882px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul {
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    #hero .hero-content {
+        padding-top: 10rem;
+    }
+    
+    #treatments .items {
+        display: block;
+    }
+}
+
+@media (max-width: 800px) {
+    #contact iframe {
+        width: 700px;
+        height: 500px;
+     }
+}
+
+@media (max-width: 700px) {
+    #about {
+        display: block;
+        
+    }
+}
+
+@media (max-width: 540px) {
+    #contact iframe {
+        width: 540px;
+        height: 350px;
+     }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 8px;
+    }
+
+    #contact iframe {
+        width: 500px;
+        height: 375px;
+     }
+}
+
+@media (max-width: 420px) {
+    #contact iframe {
+        width: 400px;
+        height: 300px;
+     }
+}
+
+@media (max-width: 393px) {
+    #contact iframe {
+        width: 390px;
+        height: 300px;
+     }
+}
+
+@media (max-width: 375px) {
+    #contact iframe {
+        width: 375px;
+        height: 300px;
+     }
+}
+
+@media (max-width: 360px) {
+    #contact iframe {
+        width: 360px;
+        height: 270px;
+     }
+}
+
+@media (max-width: 280px) {
+    #contact iframe {
+        width: 280px;
+        height: 200px;
+     }
+
+     #navbar h1 {
+        font-size: 2.3rem;
+    }
+}

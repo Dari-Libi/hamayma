@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>הוראות לאינטרציה של מפה</title>
+        <style>
+            html, body {
+                direction: rtl;
+            }
+        </style>
+    </head>
+    <body>
+        העתיקו את הקוד הבא ל-head של העמוד, מעל ה-title:
+        <br><br>
+        <textarea readonly='true' style="width: 100%; height: 100px; direction: ltr;">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js">
+</script><link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+</textarea>
+        <br><br>
+        העתיקו את הקוד הבא אל מתחת ל-div עם ה-id של map שהגדרנו:
+        <br><br>
+        <textarea readonly='true' style="width: 100%; height: 500px; direction: ltr;">
+            <script>
+                const cords = [34.771384, 32.062997];
+                mapboxgl.accessToken =
+                    'YOUR SECRET KEY';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v11',
+                    center: cords,
+                    zoom: 12,
+                });
+                const popup = new mapboxgl.Popup({ maxWidth: '170px' }).setText(
+                    'Celestial Massage Clinic, Rothschild Blvd 22, Tel-Aviv, Israel'
+                );
+                const marker1 = new mapboxgl.Marker()
+                    .setLngLat(cords)
+                    .setPopup(popup)
+                    .addTo(map);
+
+                marker1.togglePopup();
+            </script>        </textarea>
+    </pre>
+    </body>
+</html>
