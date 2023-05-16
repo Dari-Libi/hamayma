@@ -265,7 +265,7 @@ ul {
 }
 
 #about .about-img {
-    background: url(/FLEX-practice/fotos-korin/hero-korin.jpg) no-repeat center center / cover;
+    background: url(../fotos-korin/hero-korin.jpg) no-repeat center center / cover;
     min-height: 40vh;
 }
 
