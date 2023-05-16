@@ -50,6 +50,10 @@
         width: 540px;
         height: 350px;
      }
+
+     #hero p {
+        margin-left: 50px;
+     }
 }
 
 @media (max-width: 500px) {
@@ -61,6 +65,7 @@
         width: 500px;
         height: 375px;
      }
+
 }
 
 @media (max-width: 420px) {
@@ -68,6 +73,11 @@
         width: 400px;
         height: 300px;
      }
+
+     #hero p {
+        margin-left: 40px;
+     }
+
 }
 
 @media (max-width: 393px) {
@@ -81,6 +91,10 @@
     #contact iframe {
         width: 375px;
         height: 300px;
+     }
+
+    #hero p {
+        margin-left: 40px;
      }
 }
 
