@@ -174,7 +174,7 @@ ul {
 
 #hero {
     /* background: url(/FLEX-practice/fotos-korin/hero-korin.jpg) no-repeat center center / cover; */
-    background: url(/FLEX-practice/fotos-korin/hero-pool.jpg) no-repeat center center / cover;
+    background: url(../fotos-korin/hero-pool.jpg) no-repeat center center / cover;
     height: 96vh;
     color: var(--secondary);
     /* mix-blend-mode: multiply; */
