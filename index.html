@@ -23,6 +23,7 @@
                 <li><a href="#hero">בית</a></li>
                 <li><a href="#treatments">טיפולים</a></li>
                 <li><a href="#about">על הקליניקה</a></li>
+                <li><a href="#slider">גלריה</a></li>
                 <li><a href="#contact">צור קשר</a></li>
             </ul>
         </nav>
@@ -40,7 +41,9 @@
         <!-- Section: Treatments -->
         <section id="treatments" class="bg-light py-4">
             <div class="container">
-                <h2 class="heading-l">הטיפולים שלנו</h2>
+                <h2 class="heading-l">
+                    טיפולי <span class="text-primary">המיימא</span>
+                </h2>
                 <!-- <div class="plant">
                     <img src="/FLEX-practice/fotos-korin/plantbg.png" alt="">
                 </div> -->
@@ -97,7 +100,52 @@
             </div>
             <div class="about-img"></div>
         </section>
+        <!-- Section: Slider -->
+        <section id="slider">
+            <h2 class="heading-l">
+                גלריית <span class="text-primary">המיימא</span>
+            </h2>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
 
+                    <div class="slide first">
+                        <img src="fotos-korin/slider1.jpg" alt="img1">
+                    </div>
+                    <div class="slide">
+                        <img src="fotos-korin/slider2.jpg" alt="img2">
+                    </div>
+                    <div class="slide">
+                        <img src="fotos-korin/slider3.jpg" alt="img3">
+                    </div>
+                    <div class="slide">
+                        <img src="fotos-korin/slider4.jpg" alt="img4">
+                    </div>
+                    <div class="slide">
+                        <img src="fotos-korin/slider5.jpg" alt="img5">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                    </div>
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
         <!-- Section: institutes -->
         <sectin id="institutes" class="py-4">
             <div class="container">
@@ -139,5 +187,6 @@
         <footer id="footer" class="py-2">
             <div class="container">Copyright &copy; 2023, Hamayma Clinic</div>
         </footer>
-        <script src="CSS/JS/main.js"></script>
+        <script src="CSS/JS/main.js"></script> 
+    </body>
 </html>
