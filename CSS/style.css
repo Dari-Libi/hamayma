@@ -28,7 +28,6 @@ cream: #e1b896
 html {
     direction: rtl;
     font-size: 62.5%;  /* 10px */
-    background-color: var(--secondary);
     
 }
 
@@ -36,6 +35,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
     line-height: 2.2rem;
+    /* background-color: var(--secondary); */
+    background: url(../fotos-korin/bg9.jpg) no-repeat center center /cover ;
 }
 
 a {
@@ -62,7 +63,7 @@ ul {
 
 .bg-light {
     color: var(--dark);
-    background-color: var(--secondary);
+    /* background-color: var(--secondary); */
 }
 
 .bg-dark {
@@ -134,9 +135,17 @@ ul {
 
 /* Navbar */
 
+/* #navbar img {
+    float: right;
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 10px;
+} */
+
 #navbar {
     color: var(--primary);
     background-color: var(--secondary);
+    background: url(../fotos-korin/bg9.jpg) no-repeat center center /cover ;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem; 
@@ -155,6 +164,7 @@ ul {
 #navbar ul {
     display: flex;
     align-items: center;
+    color: var(--dark);
 }
 
 #navbar ul li a {
@@ -165,8 +175,8 @@ ul {
 }
 
 #navbar ul li a:hover {
-    background: var(--primary);
-    color: var(--secondary);
+    background: var(--secondary);
+    color: var(--primary);
     border-radius: 0.5rem;
 } 
 
@@ -206,7 +216,7 @@ ul {
     font-weight: 700;
     text-align: center;
     /* margin-bottom: 2rem; */
-    max-width: 60rem;
+    /* max-width: 60rem; */
     padding-top: 2rem;
     line-height: 2.5rem;
     text-shadow: 2px 2px 1px black;
@@ -216,7 +226,7 @@ ul {
 
 #hero .main-content {
     background-color: #0f0f0e46;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 #hero a {
@@ -232,18 +242,47 @@ ul {
     line-height: 2rem;
 } */
 
+#treatments h2 {
+    padding-top: 40px;
+}
+
+#treatments2 {
+    padding-top: none;
+}
+
 #treatments .items {
     display: flex;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+}
+
+#treatments2 .items {
+    display: flex;
+    padding: 0 2rem 0 2rem;
     text-align: center;
 }
 
 #treatments .items .item {
     flex: 1;
     padding: 2rem;
+    padding-bottom: none;
+}
+
+#treatments2 .items .item {
+    flex: 1;
+    padding: 2rem;
+    padding-bottom: none;
 }
 
 #treatments .items .item i {
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 1.3rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+#treatments2 .items .item i {
     background: var(--primary);
     color: var(--secondary);
     padding: 1.3rem;
@@ -258,6 +297,7 @@ ul {
 /* Team = About */
 #about {
     display: flex;
+    padding-top: 30px;
 }
 
 #about div {
@@ -283,21 +323,88 @@ ul {
     padding: 1rem 3rem 0 3rem;
 }
 
+/* testemonials */
+
+#reviwes {
+    padding-top: 60px;
+}
+
+#reviwes .about-text {}
+
+#reviwes h2 {
+    padding: 20px;
+}
+
+#reviwes .testimonial {
+    /* background: #590000; */
+    background-color: #9f6c49;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #5e3427;
+    /* opacity: 0.8; */
+    min-height: 140px;
+}
+
+#reviwes .testimonial img {
+    
+    width: 100px;
+    float: right;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
 /* Institutes */
+
+#institutes {
+    padding: 30px 0 30px 0;
+}
+
+#institutes .container3 {
+    background-color: #35848b7a;
+    width: 100%;
+    
+}
+
 #institutes .items {
     display: flex;
 }
 
 #institutes .items img {
+    background-color: #e1b8963a;
     display: block;
     margin: auto;
+    margin-bottom: 50px;
     width: 30%;
-    padding-bottom: 30px;
+    border-radius: 20%;
 }
 
 #institutes .heading-l {
     padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--secondary);
+}
+
+/* map */
+
+#map {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#map .heading-l {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
     color: var(--primary);
+}
+
+#map .map-responsive {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 /* Contact */
@@ -309,6 +416,11 @@ ul {
     border-top: solid 5px #9f6c49;
     font-weight: 200;
     
+}
+
+#contact .heading-l {
+    text-align: center;
+    color: var(--dark);
 }
 
 #contact .contact-form {
@@ -334,6 +446,7 @@ ul {
     max-width: 150px;
     color: var(--dark);
     background: var(--secondary);
+    margin-top: 30px;
 }
 
 #contact .contact-form .btn:hover {
@@ -344,6 +457,33 @@ ul {
 .btn-form {
     text-align: center;
     
+}
+
+#contact .items2 {
+    
+    display: flex;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center; 
+}
+
+#contact .items2 .item-contact { 
+    flex: 1;
+    padding: 2rem;
+    padding-bottom: none;
+}
+
+#contact .items2 .item-contact i {
+    background: var(--light);
+    color: var(--secondary);
+    padding: 1.3rem;
+    border-radius: 20%;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+#contact .items2 .item-contact i:hover {
+    background-color: var(--secondary);
+    color: var(--light);
 }
 
 /* Footer */
@@ -428,6 +568,26 @@ ul {
     margin-right: -80%;
 }
 
+#radio6:checked ~ .first {
+    margin-right: -100%;
+}
+
+#radio7:checked ~ .first {
+    margin-right: -120%;
+}
+
+#radio8:checked ~ .first {
+    margin-right: -140%;
+}
+
+#radio9:checked ~ .first {
+    margin-right: -160%;
+}
+
+#radio10:checked ~ .first {
+    margin-right: -180%;
+}
+
 .navigation-auto div {
     border: 2px solid var(--light);
     padding: 5px;
@@ -468,8 +628,28 @@ ul {
     background-color: var(--secondary);
 }
 
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: var(--secondary);
+}
 
-#slider h2 {
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+    background-color: var(--secondary);
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+    background-color: var(--secondary);
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn9 {
+    background-color: var(--secondary);
+}
+
+#radio10:checked ~ .navigation-auto .auto-btn10 {
+    background-color: var(--secondary);
+}
+
+
+#slider  {
     color: var(--primary);
     padding: 4rem;
 }
