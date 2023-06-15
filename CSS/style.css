@@ -12,11 +12,14 @@ cream: #e1b896
 
 :root {
     --primary: #9f6c49;
-    --primary-dark: #6b4125;
+    --primary-dark: #faae9b;
+    --primary-light: #b0ebde;
     --secondary: #e1b896;
-    --dark: #5e3427;
+    --dark: #ee846a;
     --light: #35848b;
     --third: #272525;
+    --forth: #22caa6;
+    
 }
 
 * {
@@ -36,7 +39,7 @@ body {
     font-size: 1.4rem;
     line-height: 2.2rem;
     /* background-color: var(--secondary); */
-    background: url(../fotos-korin/bg9.jpg) no-repeat center center /cover ;
+    background: url(../fotos-korin/BGcloudsgreen.jpg) no-repeat center center /cover ;
 }
 
 a {
@@ -67,8 +70,8 @@ ul {
 }
 
 .bg-dark {
-    color: var(--secondary);
-    background-color: var(--dark);
+    color: var(--primary);
+    background-color: var(--secondary);
 }
 
 .heading-l {
@@ -130,7 +133,8 @@ ul {
 }
 
 .btn:hover {
-    background: var(--dark);
+    background: var(--secondary);
+    color: var(--primary);
 }
 
 /* Navbar */
@@ -145,7 +149,7 @@ ul {
 #navbar {
     color: var(--primary);
     background-color: var(--secondary);
-    background: url(../fotos-korin/bg9.jpg) no-repeat center center /cover ;
+    background: url(../fotos-korin/BGcloudsgreen.jpg) no-repeat center center /cover ;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem; 
@@ -164,7 +168,9 @@ ul {
 #navbar ul {
     display: flex;
     align-items: center;
-    color: var(--dark);
+    color: var(--primary);
+    font-size: 1.5rem;
+
 }
 
 #navbar ul li a {
@@ -175,8 +181,9 @@ ul {
 }
 
 #navbar ul li a:hover {
-    background: var(--secondary);
+    background: var(--primary-light);
     color: var(--primary);
+    opacity: 0.7;
     border-radius: 0.5rem;
 } 
 
@@ -186,7 +193,7 @@ ul {
     /* background: url(/FLEX-practice/fotos-korin/hero-korin.jpg) no-repeat center center / cover; */
     background: url(../fotos-korin/hero-pool.jpg) no-repeat center center / cover;
     height: 96vh;
-    color: var(--secondary);
+    color: var(--primary-dark);
     /* mix-blend-mode: multiply; */
 }
 
@@ -208,7 +215,7 @@ ul {
     font-size: 7rem;
     font-weight: 600; 
     text-shadow: 6px 6px 5px black;
-    color: antiquewhite;
+    color: var(--primary-light)
 }
 
 #hero p {
@@ -235,6 +242,16 @@ ul {
     margin-top: 3rem;
 }
 
+#hero a.btn {
+    background-color: var(--primary-light);
+    color: var(--dark)
+}
+
+#hero a.btn:hover {
+    background-color: var(--primary-dark);
+    color: var(--light);
+}
+
 /* Treatments */
 
 /* #treatments h3 {
@@ -244,6 +261,23 @@ ul {
 
 #treatments h2 {
     padding-top: 40px;
+    color: var(--primary)
+}
+
+#treatments h3 {
+    color: var(--dark)
+}
+
+#treatments2 h3 {
+    color: var(--dark)
+}
+
+#treatments p {
+    color: var(--dark)
+}
+
+#treatments2 p {
+    color: var(--dark)
 }
 
 #treatments2 {
@@ -275,16 +309,16 @@ ul {
 }
 
 #treatments .items .item i {
-    background: var(--primary);
-    color: var(--secondary);
+    background: var(--light);
+    color: var(--primary-light);
     padding: 1.3rem;
     border-radius: 50%;
     margin-bottom: 1.5rem;
 }
 
 #treatments2 .items .item i {
-    background: var(--primary);
-    color: var(--secondary);
+    background: var(--light);
+    color: var(--primary-light);
     padding: 1.3rem;
     border-radius: 50%;
     margin-bottom: 1.5rem;
@@ -337,11 +371,11 @@ ul {
 
 #reviwes .testimonial {
     /* background: #590000; */
-    background-color: #9f6c49;
+    background-color:var(--primary);
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 10px;
-    color: #5e3427;
+    color:var(--secondary);
     /* opacity: 0.8; */
     min-height: 140px;
 }
@@ -361,7 +395,7 @@ ul {
 }
 
 #institutes .container3 {
-    background-color: #35848b7a;
+    background-color: #358b8044;
     width: 100%;
     
 }
@@ -382,7 +416,7 @@ ul {
 #institutes .heading-l {
     padding-top: 30px;
     padding-bottom: 30px;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 /* map */
@@ -411,16 +445,27 @@ ul {
 
 #contact {
     display: flex;
-    color: var(--secondary);
-    background-color: #9f6c49;
-    border-top: solid 5px #9f6c49;
-    font-weight: 200;
+    color: var(--dark);
+    background-color: #358b8044;
+    border-top: solid 5px #e1b896;
+    font-weight: 300;
+    
+}
+
+#contact h3 {
+    color: var(--light);
+    text-align: center;
+}
+
+#contact label {
+    
+    font-size: 1.5rem;
     
 }
 
 #contact .heading-l {
     text-align: center;
-    color: var(--dark);
+    color: var(--primary);
 }
 
 #contact .contact-form {
@@ -444,14 +489,14 @@ ul {
 
 #contact .contact-form .btn {
     max-width: 150px;
-    color: var(--dark);
-    background: var(--secondary);
+    color: var(--secondary);
+    background: var(--primary);
     margin-top: 30px;
 }
 
 #contact .contact-form .btn:hover {
     color: var(--secondary);
-    background: var(--dark);
+    background: var(--light);
 }
 
 .btn-form {
@@ -473,7 +518,7 @@ ul {
 }
 
 #contact .items2 .item-contact i {
-    background: var(--light);
+    background: var(--primary);
     color: var(--secondary);
     padding: 1.3rem;
     border-radius: 20%;
@@ -482,15 +527,15 @@ ul {
 }
 
 #contact .items2 .item-contact i:hover {
-    background-color: var(--secondary);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--secondary);
 }
 
 /* Footer */
 
 #footer {
     background: var(--third);
-    color: var(--secondary);
+    color: var(--primary-light);
     text-align: center;
 }
 
