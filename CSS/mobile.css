@@ -15,7 +15,6 @@
     #navbar {
         padding: 0.5rem;
     }
-
 }
 
 @media (max-width: 970px) {
@@ -33,13 +32,11 @@
     
 
 
-    #treatments .items {
-        display: block;
-    }
+    /* #treatments .items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    } */
 
-    #treatments2 .items {
-        display: block;
-    }
+    
 }
 
     @media (max-width: 930px) {
@@ -55,6 +52,10 @@
         margin-left: 70px;
     }
     
+    #institutes .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #slider  {
         padding: 4rem 0;
     }
@@ -64,7 +65,6 @@
     }
 
 }
-
 
 @media (max-width: 800px) {
     #map iframe {
@@ -82,6 +82,13 @@
         width: 768px;
     }
     
+    #slider .manual-navigation {
+        max-width: 760px;
+    }
+
+    #slider .navigation-auto {
+        max-width: 760px;
+    }
 
     .manual-btn:not(:Last-child) {
         margin-left: 50px;
@@ -123,49 +130,73 @@
     }
      }
 
-
-@media (max-width: 540px) {
-    #map iframe {
-        width: 540px;
-        height: 350px;
-     }
-
-     .slider {
-        width: 500px;
-        height: 250px;
-    }
-
-    .manual-navigation {
-        width: 500px;
-        margin-top: -200px;
-     }
-
-     .navigation-auto {
-        
-        width: 500px;
-        margin-top: 200px;
-    }
-
-    .slide img {
-        width: 500px;
-    }
-
-     #hero p {
-        margin-left: 50px;
-     }
-
-     .manual-btn:not(:Last-child) {
-        margin-left: 30px;
-    }
+     @media (max-width: 650px) {
+        .card.emotional {
+            grid-column: span 2;
+            grid-row: 1;
+        }
     
-    .navigation-auto div:not(:last-child) {
-        margin-left: 30px;
+        #treatments .treatments-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
+
+
+    @media (max-width: 540px) {
+        #map iframe {
+            width: 540px;
+            height: 350px;
+        }
+
+        .slider {
+            width: 500px;
+            height: 250px;
+        }
+
+        .manual-navigation {
+            width: 500px;
+            margin-top: -200px;
+        }
+
+        .navigation-auto {
+            
+            width: 500px;
+            margin-top: 200px;
+        }
+
+        .slide img {
+            width: 500px;
+        }
+
+        #hero p {
+            margin-left: 50px;
+        }
+
+        .manual-btn:not(:Last-child) {
+            margin-left: 30px;
+        }
+        
+        .navigation-auto div:not(:last-child) {
+            margin-left: 30px;
+        }
 }
 
 @media (max-width: 500px) {
     html {
         font-size: 8px;
+    }
+
+    #treatments .treatments-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card.emotional {
+        grid-column: unset;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
     }
 
     #map iframe {
@@ -194,6 +225,11 @@
 }
 
 @media (max-width: 420px) {
+
+    #navbar ul li a {
+        margin: 1px;
+        
+    }
 
     #map iframe {
         width: 400px;
@@ -244,9 +280,19 @@
 
 @media (max-width: 393px) {
     
+    #navbar ul {
+        
+        padding: 10px 3px;
+    }
+
     #navbar ul li a {
         padding: 10px;
         margin: 0;
+    }
+
+    #navbar ul li a.last {
+        padding-left: 5px;
+        margin-left: 0;
     }
 
     #map iframe {
@@ -303,6 +349,21 @@
 }
 
 @media (max-width: 360px) {
+
+    #navbar ul {
+        padding: 10px 3px;
+    }
+
+    #navbar ul li a {
+        padding: 8px;
+        margin: 0;
+    }
+
+    #navbar ul li a.last {
+        padding-left: 5px;
+        margin-left: 0;
+    }
+
     #map iframe {
         width: 360px;
         height: 270px;
@@ -312,13 +373,40 @@
 }
 
 @media (max-width: 280px) {
+
+    #navbar ul { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 0;
+    }
+
+    #navbar li {
+        margin: 1rem 0;
+    }
+
+    #navbar li.ti {
+        /* grid-column: 2 / span 2; */
+    }
+
     #navbar ul li a {
-        padding: 0.3rem;
-        padding-left: 0;
-        margin: 0 0.3rem;
-        margin-left: 0;
-        
-        
+        padding: 0.5rem;
+        margin: 1rem;  
+    }
+
+    #treatments h2 {
+        padding-top: 30px;
+    }
+
+    #map h2 {
+        padding-top: 30px;
+    }
+
+    #contact h2 {
+        padding-top: 30px;
     }
 
     #map iframe {

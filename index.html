@@ -11,23 +11,41 @@
             media="screen and (max-width: 1190px)"
             href="CSS/mobile.css"
         />
+        <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff"
+        >
         <title>קליניקה לטיפול במים</title>
     </head>
     <body id="#בית">
         <nav id="navbar">
             <h1 class="logo">
                 <i class="fa-solid fa-landmark-dome"></i>
-                <!-- <img src="fotos-korin/logo-korin.png" alt="לוגו-המיימא"> -->
+                <!-- <img src="./fotos-korin/logoBW.png" alt="Hamayma" class="logo" style="width: 50px;"> -->
                 <span class="text-primary">המיימא</span> - בריכה לטיפולי גוף נפש 
             </h1>
             <ul>
                 <li><a href="#hero">בית</a></li>
-                <li><a href="#treatments">טיפולים</a></li>
+                <li class="ti"><a href="#treatments">טיפולים</a></li>
                 <li><a href="#about">על המיימא</a></li>
                 <li><a href="#slider">גלריה</a></li>
                 <li><a href="#reviwes">ביקורות</a></li>
                 <li><a href="#map">מיקום</a></li>
-                <li><a href="#contact">צור קשר</a></li>
+                <li><a href="#contact" class="last">צור קשר</a></li>
             </ul>
         </nav>
         <!-- Hero Image -->
@@ -42,85 +60,89 @@
             </div>
         </header>
         <!-- Section: Treatments -->
-        <section id="treatments" class="bg-light">
+        <section id="treatments">
             <div class="container">
                 <h2 class="heading-l">
                     טיפולי <span class="text-primary">המיימא</span>
                 </h2>
-                <!-- <div class="plant">
-                    <img src="/FLEX-practice/fotos-korin/plantbg.png" alt="">
-                </div> -->
-                <div class="items">
-                    <div class="item">
-                        <i class="fa-solid fa-venus fa-2x"></i>
+                <div class="treatments-container">
+                    <article class="card">
+                        <img src="./fotos-korin/tipulimbelly.jpg" alt="עיסוי בטני" style="width: 100%;">
                         <div>
-                            <h3>עיסוי בטני</h3>
+                            <h3>
+                                עיסוי בטני
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-hand-holding-heart fa-2x"></i>
+                    </article>
+                    <article class="card emotional">
+                        <img src="./fotos-korin/tipulimemotional.jpg" alt="טיפול רגשי תהליכי" style="width: 100%;" >
                         <div>
-                            <h3>טיפול רגשי תהליכי</h3>
+                            <h3>
+                                טיפול רגשי תהליכי
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-spa fa-2x"></i>
+                    </article>
+                    <article class="card">
+                        <img src="./fotos-korin/tipulimpregnant.jpg" alt="טיפולים לנשים בהריון" style="width: 100%;">
                         <div>
-                            <h3>טיפולים לנשים בהריון</h3>
+                            <h3>
+                                טיפולים לנשים בהריון
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-hands-holding-child fa-2x"></i>
+                    </article>
+                    <article class="card">
+                        <img src="./fotos-korin/tipulimmombaby.jpg" alt="אמהות ותינוקות" style="width: 100%;">
                         <div>
-                            <h3>אמהות ותינוקות</h3>
+                            <h3>
+                                אמהות ותינוקות
+                            </h3>
                             <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                    <!-- adicioned -->
-        <section id="treatments2" class="bg-light">
-            <div class="container">
-                <div class="items">
-                    <div class="item">
-                        <i class="fa-solid fa-om fa-2x"></i>
+                    </article>
+                    <article class="card">
+                        <img src="./fotos-korin/tipulimmefanek.jpg" alt="טיפול מפנק" style="width: 100%;">
                         <div>
-                            <h3>טיפול מפנק</h3>
+                            <h3>
+                                טיפול מפנק
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-people-line fa-2x"></i>
+                    </article>
+                    <article class="card">
+                        <img src="./fotos-korin/tipulimsadna.jpg" alt="סדנאות" style="width: 100%;"> 
                         <div>
-                            <h3>סדנאות</h3>
+                            <h3>
+                                סדנאות
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <i class="fa-solid fa-gift fa-2x"></i>
+                    </article>
+                    <article class="card">
+                        <img src="./fotos-korin/tipulimgiftblue.jpg" alt="שוברי מתנה" style="width: 100%;">
                         <div>
-                            <h3>שוברי מתנה</h3>
+                            <h3>
+                                שוברי מתנה
+                            </h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, doloremque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime esse doloremque natus provident animi.
                             </p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
