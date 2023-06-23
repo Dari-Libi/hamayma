@@ -519,13 +519,13 @@ ul {
 
 #contact .items2 {
     
-    display: flex;
-    padding: 2rem 2rem 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     text-align: center; 
 }
 
 #contact .items2 .item-contact { 
-    flex: 1;
     padding: 2rem;
     padding-bottom: none;
 }
@@ -555,6 +555,11 @@ ul {
 
 
 /* Slider */
+
+#slider  {
+    color: var(--primary);
+    padding: 4rem 0;
+}
 
 #slider h2 {
     padding: 30px 0;
@@ -712,7 +717,3 @@ ul {
 }
 
 
-#slider  {
-    color: var(--primary);
-    padding: 4rem;
-}
