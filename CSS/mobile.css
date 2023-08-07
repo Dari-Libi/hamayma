@@ -1,12 +1,8 @@
 @media (max-width: 1190px) {
-    #navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0.5rem 0.2rem 0.5rem;
-    }
+    
 
     #navbar img {
-        width: 50%;
+        width: 30%;
     }
 
     #navbar ul {
@@ -21,27 +17,41 @@
     #navbar ul li a {
         padding: 0.7rem;
     }
+
 }
 
 @media (max-width: 1024px) {
     #navbar {
         padding: 0.5rem;
-    }
+        }
+
+    div.drop-container {
+        height: 360px;
+        width: 360px;
+        margin-top: -12rem;
+      }
+
+    div.drop-container:before,
+    div.drop-container:after {
+    top: 78%;
+  }
+
+  h4 {
+    font-size: 2.8rem;
+    top: 26rem;
+  }
+
 }
 
 @media (max-width: 970px) {
 
     #navbar img {
-        width: 90%;
+        width: 30%;
     }
 
     #navbar ul {
         margin-top: 0;
         padding: 0.5rem;
-    }
-
-    #hero .hero-content {
-        padding-top: 10rem;
     }
 
     #treatments {
@@ -51,6 +61,7 @@
     #about {
         padding-top: 9rem ;
     }
+
 
     #slider {
         padding-top: 10rem ;
@@ -80,8 +91,14 @@
 
     @media (max-width: 930px) {
 
+        #navbar {
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+            }
+
         #navbar img {
-            width: 90%;
+            width: 30%;
         }
     
         #navbar ul {
@@ -97,6 +114,10 @@
     
         #navbar ul li a {
             padding: 0.6rem 1rem;
+        }
+
+        div.drop-container {
+            margin-top: -15rem;
         }
 
         #hero {
@@ -125,10 +146,18 @@
 
 }
 
+@media (max-width: 912px) {
+
+    div.drop-container:before,
+      div.drop-container:after {
+        top: 80%;
+      }
+}
+
 @media (max-width: 820px) {
 
     #navbar img {
-        width: 70%;
+        width: 30%;
     }
 
     #navbar ul {
@@ -140,6 +169,12 @@
         padding: 0.5rem;
     }
 
+      div.drop-container:before,
+      div.drop-container:after {
+        top: 82%;
+      }
+
+
     #map iframe {
         width: 700px;
         height: 500px;
@@ -147,22 +182,6 @@
 }
 
 @media (max-width: 800px) {
-
-    #map iframe {
-        width: 700px;
-        height: 500px;
-     }
-}
-
-@media (max-width: 768px) {
-
-    #navbar img {
-        width: 70%;
-    }
-
-    #slider {
-        padding-top: 8rem;
-    }
 
     .slider {
         width: 760px;
@@ -187,27 +206,23 @@
     .navigation-auto div:not(:last-child) {
         margin-left: 50px;
     }
-    
+
+    #map iframe {
+        width: 700px;
+        height: 500px;
+     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
     #navbar img {
-        width: 70%;
+        width: 40%;
     }
 
-    #navbar ul {
-        margin-top: 0.5rem;
+    #slider {
+        padding-top: 8rem;
     }
 
-    #navbar ul li {
-        padding: 0;
-    }
-
-    #about {
-        display: block;
-        
-    }
 
     .slider {
         width: 700px;
@@ -228,13 +243,59 @@
     .slide img {
         width: 700px;
     }
-     }
+    
+}
+
+@media (max-width: 700px) {
+
+    #navbar ul {
+        margin-top: 0.5rem;
+    }
+
+    #navbar ul li {
+        padding: 0;
+    }
+
+    #about {
+        display: block;
+        
+    }
+
+    #about-me {
+        display: block;
+        
+    }
+
+
+    .slider {
+        width: 640px;
+        height: 320px;
+    }
+
+    .manual-navigation {
+       width: 640px;
+       margin-top: -100px;
+    }
+
+    .navigation-auto {
+        
+        width: 640px;
+        margin-top: 300px;
+    }
+
+    .slide img {
+        width: 640px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 700px) {
+    #map iframe {
+        width: 650px;
+        height: 320px;
+    }
+}
 
      @media (max-width: 650px) {
-
-        #navbar img {
-            width: 80%;
-        }
 
         .card.emotional {
             grid-column: span 2;
@@ -243,35 +304,6 @@
     
         #treatments .treatments-container {
             grid-template-columns: repeat(2, 1fr);
-        }
-
-    }
-
-
-    @media (max-width: 540px) {
-
-        #navbar img {
-            width: 80%;
-        }
-    
-        #navbar ul {
-            margin-top: 0;
-            padding: 0.5rem;
-        }
-    
-        #navbar ul li {
-            padding: 0;
-            font-size: 1.2rem;
-           
-        }
-    
-        #navbar ul li a {
-            padding: 0.6rem;
-        }
-
-        #map iframe {
-            width: 540px;
-            height: 350px;
         }
 
         .slider {
@@ -294,10 +326,6 @@
             width: 500px;
         }
 
-        #hero p {
-            margin-left: 50px;
-        }
-
         .manual-btn:not(:Last-child) {
             margin-left: 30px;
         }
@@ -305,29 +333,86 @@
         .navigation-auto div:not(:last-child) {
             margin-left: 30px;
         }
+
+        #map iframe {
+            width: 640px;
+            height: 320px;
+        }
+        
+    }
+
+    @media (min-width: 540px) and (max-width: 640px) {
+        #map iframe {
+            width: 535px;
+            height: 320px;
+        }
+    }
+
+    @media (max-width: 540px) {
+
+    
+        #navbar ul {
+            margin-top: 0;
+            padding: 0.5rem 0rem;
+        }
+    
+        #navbar ul li {
+            padding: 0;
+            font-size: 1.5rem;
+           
+        }
+    
+        #navbar ul li a {
+            padding: 0.6rem;
+        }
+
+        #map {
+            padding-top: 3rem;
+        }
+    
+        #map iframe {
+            width: 400px;
+            height: 300px;
+         }
+}
+
+@media (max-width: 511px) {
+    h4 {
+        font-size: 2.6rem;
+        top: 24rem;
+    }
 }
 
 @media (max-width: 500px) {
 
     #navbar img {
-        width: 90%;
+        width: 40%;
     }
 
     #navbar ul li {
-        font-weight: 500;
+        font-weight: 600;
     }
 
     #navbar ul li a.last {
         margin-left: 0;
     }
     
-    #hero .hero-content h1 {
-        font-size: 5rem;
-    }
 
-    #hero .hero-content p {
-        font-size: 1.5rem;
-    }
+      @keyframes dripple {
+        0% {
+          width: 150px;
+          height: 150px;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          width: 470px;
+          height: 500px;
+          top: -20%;
+          opacity: 0;
+        }
+      }
 
     #treatments .treatments-container {
         grid-template-columns: repeat(1, 1fr);
@@ -341,94 +426,7 @@
         transform: scale(1.1);
     }
 
-    #map iframe {
-        width: 500px;
-        height: 375px;
-     }
-
-     .slider {
-        width: 500px;
-        height: 300px;
-    }
-
-    .manual-navigation {
-        width: 500px;
-        margin-top: -130px;
-     }
-
-     .navigation-auto {
-        width: 500px;
-        margin-top: 270px;
-     }
-
-     .slide img {
-        width: 500px;
-    }
-}
-
-@media (max-width: 420px) {
-
-    #navbar img {
-        width: 90%;
-    }
-
-    #navbar ul {
-        margin-top: 0;
-        padding: 0.5rem;
-        font-weight: 400;
-        
-    }
-
-    #navbar ul li {
-        padding: 0;
-        font-size: 1rem;
-       
-    }
-
-    #navbar ul li a {
-        padding: 0.5rem;
-        margin: 0 0.4rem;
-        
-    }
-
-    #hero .hero-content{
-        padding: 0;
-        margin-top: 4rem;
-    }
-
-    #hero .hero-content h1 {
-        font-size: 3rem;
-    }
-
-    #hero .hero-content p {
-        font-size: 1.1rem;
-    }
-
-    #hero .hero-content a.btn {
-        font-size: 1.3rem;
-        padding: 1rem;
-        margin-top: 1.5rem;
-        font-weight: 500;
-    }
-
-    #treatments h2 {
-        padding-top: unset;
-    }
-
-    #about {
-        padding-top: 3rem;
-    }
-
-    #map {
-        padding-top: 3rem;
-    }
-
-    #map iframe {
-        width: 400px;
-        height: 300px;
-     }
-
-     .slider {
+    .slider {
         width: 400px;
         height: 200px;
     }
@@ -451,11 +449,87 @@
     .manual-btn:not(:Last-child) {
         margin-left: 20px;
     }
-    
+
     .navigation-auto div:not(:last-child) {
         margin-left: 20px;
     }
+
+}
+
+@media (max-width: 464px) {
     
+    h4 {
+        font-size: 2.5rem;
+        top: 22rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    div.drop-container {
+        height: 290px;
+        width: 290px;
+      }
+
+      @keyframes dripple {
+        0% {
+          width: 150px;
+          height: 150px;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          width: 400px;
+          height: 500px;
+          top: -20%;
+          opacity: 0;
+        }
+      }
+
+      h4 {
+        font-size: 2.3rem;
+        top: 20rem;
+      }
+
+}
+
+@media (max-width: 420px) {
+
+    #navbar img {
+        width: 40%;
+    }
+
+    #navbar ul {
+        margin-top: 0;
+        padding: 0.5rem;
+        font-weight: 500;
+    }
+
+    #navbar ul li {
+        padding: 0;
+        font-size: 1.5rem;
+       
+    }
+
+    #navbar ul li a {
+        padding: 0.5rem;
+        margin: 0 0.2rem;   
+    }
+
+    h4 {
+        font-size: 2.2rem;
+        top: 20rem;
+      }
+
+    #treatments h2 {
+        padding-top: unset;
+    }
+
+    #about {
+        padding-top: 3rem;
+    }
+
     #slider  {
         padding: 4rem 0;
     }
@@ -470,45 +544,14 @@
 
 }
 
-@media (max-width: 393px) {
-    
-    #navbar img {
-        width: 90%;
-    }
+@media (max-width: 402px) {
 
-    #navbar ul {
-        margin-top: 0;
-        padding: 0.5rem;
-        font-weight: 400;
-        
-    }
+    h4 {
+        font-size: 2.1rem;
+        top: 20rem;
+      }
 
-    #navbar ul li {
-        padding: 0;
-        font-size: 0.9rem;
-       
-    }
-
-    #navbar ul li a {
-        padding: 0.5rem;
-        margin: 0 0.4rem;
-        
-    }
-    
-    #reviwes {
-        padding-top: 3rem;
-    }
-
-    #map {
-        padding-top: 2rem;
-    }
-
-    #map iframe {
-        width: 390px;
-        height: 300px;
-    }
-
-     .slider {
+    .slider {
         width: 350px;
         height: 200px;
     }
@@ -527,32 +570,133 @@
     .slide img {
         width: 350px;
     }
+
+    #map iframe {
+        width: 395px;
+        height: 300px;
+    }
 }
 
-@media (max-width: 375px) {
-
+@media (max-width: 395px) {
+    
     #navbar img {
-        width: 90%;
+        width: 50%;
     }
 
     #navbar ul {
         margin-top: 0;
         padding: 0.5rem;
-        font-weight: 400;
+        font-weight: 500;
         
     }
 
     #navbar ul li {
         padding: 0;
-        font-size: 0.8rem;
+        font-size: 1.5rem;   
+    }
+
+    #navbar ul li.ti {
+       margin: 0;  
+    }
+
+    #navbar ul li a {
+        padding: 0.5rem;
+        margin: 0 0.2rem;
+    }
+
+    div.drop-container {
+        height: 278px;
+        width: 278px;
+      }
+
+      @keyframes dripple {
+        0% {
+          width: 150px;
+          height: 150px;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          width: 380px;
+          height: 500px;
+          top: -20%;
+          opacity: 0;
+        }
+      }
+    
+    #reviwes {
+        padding-top: 3rem;
+    }
+
+    #map {
+        padding-top: 2rem;
+    }
+
+    #map iframe {
+        width: 375px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 386px) {
+
+    h4 {
+        font-size: 2rem;
+        top: 20rem;
+      }
+}
+
+@media (max-width: 375px) {
+
+    h4 {
+        font-size: 1.9rem;
+        top: 19rem;
+      }
+
+    #navbar img {
+        width: 50%;
+    }
+
+    #navbar ul {
+        margin-top: 0;
+        padding: 0.5rem 0rem;
+        font-weight: 500;
+        
+    }
+
+    #navbar ul li {
+        padding: 0;
+        font-size: 1.5rem;
        
     }
 
     #navbar ul li a {
         padding: 0.5rem;
-        margin: 0 0.4rem;
+        margin: 0 0.2rem;
         
     }
+
+    div.drop-container {
+        height: 260px;
+        width: 260px;
+      }
+
+      @keyframes dripple {
+        0% {
+          width: 150px;
+          height: 150px;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          width: 355px;
+          height: 500px;
+          top: -20%;
+          opacity: 0;
+        }
+      }
 
     #treatments h2 {
         font-size: 3.5rem;
@@ -568,7 +712,7 @@
     }
 
     #map iframe {
-        width: 370px;
+        width: 360px;
         
      }
 
@@ -607,45 +751,71 @@
 
 @media (max-width: 360px) {
 
+    h4 {
+        font-size: 1.8rem;
+        top: 18rem;
+    }
+
     #navbar img {
-        width: 90%;
+        width: 40%;
     }
 
     #navbar ul {
         margin-top: 0;
-        padding: 0.5rem;
+        padding: 0.5rem 0rem;
         font-weight: 400;
         
     }
 
     #navbar ul li {
         padding: 0;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
        
     }
 
     #navbar ul li a {
-        padding: 0.5rem;
-        margin: 0 0.3rem;
+        padding: 0.4rem;
+        margin: 0 0.2rem;
         
     }
+
+    div.drop-container {
+        height: 250px;
+        width: 250px;
+      }
+
+      @keyframes dripple {
+        0% {
+          width: 150px;
+          height: 150px;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          width: 350px;
+          height: 500px;
+          top: -20%;
+          opacity: 0;
+        }
+      }
 
     #treatments h2 {
         font-size: 3.3rem;
     }
 
     #map iframe {
-        width: 360px;
+        width: 280px;
         height: 270px;
     }
 
     
 }
 
-@media (max-width: 280px) {
+@media (max-width: 350px) {
 
     #navbar img {
-        width: 90%;
+        width: 50%;
         margin-bottom: 5px;
     }
 
@@ -664,13 +834,81 @@
         margin: 0;
     }
 
-    #navbar li.ti {
-        /* grid-column: 2 / span 2; */
+    navbar li.ti {
+        margin: 0;
     }
+
 
     #navbar ul li a {
         padding: 0.5rem;
-        margin: 0 0.9rem;  
+        margin: 0 0.4rem;  
+    }
+
+    @keyframes dripple {
+        0% {
+          width: 150px;
+          height: 150px;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          width: 260px;
+          height: 500px;
+          top: -20%;
+          opacity: 0;
+        }
+      }
+
+    .slider {
+        width: 280px;
+        height: 140px;
+    }
+
+    .manual-navigation {
+        width: 280px;
+        margin-top: -280px;
+    }
+
+     .navigation-auto {
+        
+        width: 280px;
+        margin-top: 120px;
+    }
+
+    .slide img {
+        width: 280px;
+    }
+
+    .manual-btn:not(:Last-child) {
+        margin-left: 12px;
+    }
+
+    .navigation-auto div:not(:last-child) {
+        margin-left: 12px;
+    }
+
+    #slider  {
+        padding-right: 0;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    h4 {
+        font-size: 1.7rem;
+        top: 18rem;
+    }
+}
+
+@media (max-width: 280px) {
+
+    
+
+    div.drop-container {
+        height: 230px;
+        width: 230px;
     }
 
     #hero h1 {
@@ -696,7 +934,15 @@
         font-size: 3rem;
     }
 
+    #about-me h2 {
+        font-size: 3rem;
+    }
+
     #about p {
+        font-size: 1rem;
+    }
+
+    #about-me p {
         font-size: 1rem;
     }
 
@@ -742,36 +988,6 @@
         font-size: 2.7rem;
     }
 
-    .slider {
-        width: 280px;
-        height: 140px;
-    }
-
-    .manual-navigation {
-        width: 280px;
-        margin-top: -280px;
-    }
-
-     .navigation-auto {
-        
-        width: 280px;
-        margin-top: 120px;
-    }
-
-    .slide img {
-        width: 280px;
-    }
-
-    .manual-btn:not(:Last-child) {
-        margin-left: 12px;
-    }
-
-    .navigation-auto div:not(:last-child) {
-        margin-left: 12px;
-    }
-
-    #slider  {
-        padding-right: 0;
-    }
+    
 
 }
