@@ -200,7 +200,7 @@ ul {
     display: flex;
     align-items: center;
     color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 
 }
@@ -209,7 +209,7 @@ ul {
     display: flex;
     align-items: center;
     color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 
 }
@@ -404,9 +404,9 @@ ul {
     margin-top: -14rem;
     height: 460px;
     width: 460px;
-    background-color: #4fb7c0;
+    background-color:#293c74d2;
     border-radius: 100%;
-    opacity: 0.8;
+    opacity: none;
     animation: drip 4s forwards;
   }
   
@@ -420,8 +420,8 @@ ul {
     transform: rotate(-45deg);
     margin: 0px;
     /* background-color: deepskyblue; */
-    background: url(../fotos-korin/logo-drop2.png) no-repeat center center / cover;
-    opacity: none;
+    background: url(../fotos-korin/main-logo3.png) no-repeat center center / cover;
+    opacity: none;  
     animation: drip 4s forwards;
   }
   
@@ -447,7 +447,7 @@ ul {
     top: 30rem; left: 30px; right: 30px; bottom: 0;
     text-shadow: 5px 4px 10px rgb(67, 187, 159);
     z-index: 1;
-    margin-top: 420px;
+    margin-top: 440px;
     text-align: center;
     opacity: 1.0;
     animation: appear 5s 0s forwards;
@@ -486,7 +486,7 @@ ul {
     45% {
       top: 0;
       border-radius: 100% 100% 100% 100%;
-      /* transform: rotate(-45deg); */
+      transform: rotate(-45deg);
     }
     100% {
       top: 0;
@@ -495,7 +495,7 @@ ul {
     }
   }
   
-  @keyframes dripple {
+  /* @keyframes dripple {
     0% {
       width: 150px;
       height: 150px;
@@ -509,7 +509,7 @@ ul {
       top: -20%;
       opacity: 0;
     }
-  }
+  } */
 
 /* #hero .hero-content {
     display: flex;

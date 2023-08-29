@@ -38,7 +38,7 @@
 
   h4 {
     font-size: 2.8rem;
-    top: 26rem;
+    top: 22rem;
   }
 
 }
@@ -108,7 +108,7 @@
     
         #navbar ul li {
             padding: 0.3rem 1.5rem;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
            
         }
     
@@ -118,6 +118,10 @@
 
         div.drop-container {
             margin-top: -15rem;
+        }
+
+        h4 {
+            top: 24rem;
         }
 
         #hero {
@@ -160,19 +164,10 @@
         width: 30%;
     }
 
-    #navbar ul {
-        margin-top: 0;
-        padding: 0.5rem;
-    }
-
-    #navbar ul li {
-        padding: 0.5rem;
-    }
-
       div.drop-container:before,
       div.drop-container:after {
         top: 82%;
-      }
+    }
 
 
     #map iframe {
@@ -253,7 +248,8 @@
     }
 
     #navbar ul li {
-        padding: 0;
+        padding: 0.3rem 1rem;
+       
     }
 
     #about {
@@ -296,6 +292,15 @@
 }
 
      @media (max-width: 650px) {
+
+        #navbar ul li {
+            padding: 0.3rem 0.8rem;
+            font-size: 1.7rem;
+        }
+
+        #navbar ul .dropdown {
+            font-size: 1.7rem;
+        }
 
         .card.emotional {
             grid-column: span 2;
@@ -348,6 +353,17 @@
         }
     }
 
+    @media (min-width: 540px) and (max-width: 600px) {
+        #navbar ul li {
+            padding: 0.3rem 0.4rem;
+            font-size: 1.6rem;
+        }
+
+        #navbar ul .dropdown {
+            font-size: 1.6rem;
+        }
+    }
+
     @media (max-width: 540px) {
 
     
@@ -357,13 +373,16 @@
         }
     
         #navbar ul li {
-            padding: 0;
+            padding: 0.3rem 0.7rem;
             font-size: 1.5rem;
-           
+        }
+
+        #navbar ul .dropdown {
+            font-size: 1.5rem;
         }
     
         #navbar ul li a {
-            padding: 0.6rem;
+            padding: 0.6rem 0.7rem;;
         }
 
         #map {
@@ -379,7 +398,7 @@
 @media (max-width: 511px) {
     h4 {
         font-size: 2.6rem;
-        top: 24rem;
+        top: 22rem;
     }
 }
 
@@ -391,28 +410,12 @@
 
     #navbar ul li {
         font-weight: 600;
+        padding: 0.3rem 0.5rem;
     }
 
     #navbar ul li a.last {
         margin-left: 0;
     }
-    
-
-      @keyframes dripple {
-        0% {
-          width: 150px;
-          height: 150px;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          width: 470px;
-          height: 500px;
-          top: -20%;
-          opacity: 0;
-        }
-      }
 
     #treatments .treatments-container {
         grid-template-columns: repeat(1, 1fr);
@@ -456,6 +459,18 @@
 
 }
 
+@media (max-width: 490px) {
+    
+    #navbar ul li {
+        padding: 0.3rem 0.3rem;
+        font-size: 1.4rem;
+    }
+
+    #navbar ul .dropdown {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 464px) {
     
     h4 {
@@ -466,30 +481,25 @@
 
 @media (max-width: 450px) {
 
+    #navbar ul {
+        margin-top: 0;
+        padding: 0.5rem;
+        font-weight: 500;
+    }
+
+    #navbar ul li a {
+        padding: 0.5rem;
+        margin: 0 0.2rem;   
+    }
+
     div.drop-container {
         height: 290px;
         width: 290px;
       }
 
-      @keyframes dripple {
-        0% {
-          width: 150px;
-          height: 150px;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          width: 400px;
-          height: 500px;
-          top: -20%;
-          opacity: 0;
-        }
-      }
-
       h4 {
         font-size: 2.3rem;
-        top: 20rem;
+        top: 18rem;
       }
 
 }
@@ -500,26 +510,8 @@
         width: 40%;
     }
 
-    #navbar ul {
-        margin-top: 0;
-        padding: 0.5rem;
-        font-weight: 500;
-    }
-
-    #navbar ul li {
-        padding: 0;
-        font-size: 1.5rem;
-       
-    }
-
-    #navbar ul li a {
-        padding: 0.5rem;
-        margin: 0 0.2rem;   
-    }
-
     h4 {
         font-size: 2.2rem;
-        top: 20rem;
       }
 
     #treatments h2 {
@@ -545,6 +537,20 @@
 }
 
 @media (max-width: 402px) {
+
+    #navbar img {
+        width: 50%;
+    }
+
+    #navbar ul li {
+        padding: 0.3rem 0.2rem;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul .dropdown {
+        font-size: 1.3rem;
+    }
+
 
     h4 {
         font-size: 2.1rem;
@@ -578,51 +584,10 @@
 }
 
 @media (max-width: 395px) {
-    
-    #navbar img {
-        width: 50%;
-    }
-
-    #navbar ul {
-        margin-top: 0;
-        padding: 0.5rem;
-        font-weight: 500;
-        
-    }
-
-    #navbar ul li {
-        padding: 0;
-        font-size: 1.5rem;   
-    }
-
-    #navbar ul li.ti {
-       margin: 0;  
-    }
-
-    #navbar ul li a {
-        padding: 0.5rem;
-        margin: 0 0.2rem;
-    }
 
     div.drop-container {
         height: 278px;
         width: 278px;
-      }
-
-      @keyframes dripple {
-        0% {
-          width: 150px;
-          height: 150px;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          width: 380px;
-          height: 500px;
-          top: -20%;
-          opacity: 0;
-        }
       }
     
     #reviwes {
@@ -651,7 +616,7 @@
 
     h4 {
         font-size: 1.9rem;
-        top: 19rem;
+        top: 16rem;
       }
 
     #navbar img {
@@ -667,8 +632,11 @@
 
     #navbar ul li {
         padding: 0;
-        font-size: 1.5rem;
-       
+        font-size: 1.4rem;
+    }
+
+    #navbar ul .dropdown {
+        font-size: 1.4rem;
     }
 
     #navbar ul li a {
@@ -680,22 +648,6 @@
     div.drop-container {
         height: 260px;
         width: 260px;
-      }
-
-      @keyframes dripple {
-        0% {
-          width: 150px;
-          height: 150px;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          width: 355px;
-          height: 500px;
-          top: -20%;
-          opacity: 0;
-        }
       }
 
     #treatments h2 {
@@ -784,21 +736,6 @@
         width: 250px;
       }
 
-      @keyframes dripple {
-        0% {
-          width: 150px;
-          height: 150px;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          width: 350px;
-          height: 500px;
-          top: -20%;
-          opacity: 0;
-        }
-      }
 
     #treatments h2 {
         font-size: 3.3rem;
@@ -843,22 +780,6 @@
         padding: 0.5rem;
         margin: 0 0.4rem;  
     }
-
-    @keyframes dripple {
-        0% {
-          width: 150px;
-          height: 150px;
-        }
-        25% {
-          opacity: 1;
-        }
-        100% {
-          width: 260px;
-          height: 500px;
-          top: -20%;
-          opacity: 0;
-        }
-      }
 
     .slider {
         width: 280px;
